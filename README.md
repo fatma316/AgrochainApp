@@ -2,11 +2,6 @@
 
 This project is a blockchain Application for Agricultural Supply Chain based on Ethereum smart contracts using Truffle and Solidity.
 
-# Team : 
-  - Chaabene Fatma
-  - Torjmen Mohamed Arbi
-  - Essefi Ahlem
-  - Mgazzen Mayssa
 
 ## Requirements
 * [Nodejs](https://nodejs.org/en/download/)
