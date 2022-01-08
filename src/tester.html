@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer</title>
+    <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<header>
+	<nav class="navbar">
+        
+        <link href="./app.css" rel='stylesheet' type='text/css'>
+
+        <script src="./app.js"></script>
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      
+
+
+      <a href="#"></a>
+      <ul id="ul-navigation" class="nav-ul" data-visible="false">
+        <li class="nav-li"><a href="../farmer.html">farmer</a></li>
+        <li class="nav-li"><a href="../tester.html">tester</a></li>
+        <li class="nav-li"><a href="../customer.html">customer</a></li>
+        <li class="nav-li"><a href="../finance.html">supplier</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-controls="ul-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+    </nav>
+</header>
+<body>
+	<br><br><br><br><br><br><br>
+    <div class="btn-group" id="form-selector" align="center">
+        <button type="button" class="btn1 btn-selector" id="log-in-btn">Quality Testing</button>
+
+
+    </div>
+    <div hidden class="btn-group" id="form-selector-undef" align="center">
+        <button type="button" class="btn1 btn-selector" id="log-in-btn-undef">Quality Testing</button>
+
+	</div>
+
+       <div class="form" id="log-in-form">
+
+        <h2 class="form-title">Quality Testing</h2>
+        <br>
+        <table >  
+        <input type="text" class="input-std" id="fid1" placeholder="Farmer Id">
+        <tr><td><b><label class = "black">Farmer Name</label></td><td>:</td></b><td><span class="black"  id="getval2"></span></td></tr>
+        <tr><td><b><label class = "black">Location</label></td><td>:</td></b><td><span class="black" span id="getval3"></span></td></tr>
+        <tr><td><b><label class = "black">Crop</label></td><td>:</td></b><td><span class="black" span id="getval4"></span></td></tr>
+        <tr><td><b><label class = "black">Phone</label></td><td>:</td></b><td><span class="black" span id="getval5"></span></td></tr>
+        <tr><td><b><label class = "black">Quantity</label></td><td>:</td></b><td><span class="black" span id="getval6"></span></td></tr>
+        <tr><td><b><label class = "black">Expected price</label><td>:</td></td></b><td><span class="black" span id="getval7"></span></td></tr>
+        </table> 
+
+        <button type="button" class="btn-submit" id="getvalue" onclick="get();">Get Farmer Credentials</button>
+        <br><br>
+        <button type="button" class="btn-submit1" id="Approve-btn" align ="center" font="20px">Approve Lot</button>
+        <span id="status"></span>
+
+    </div>
+
+    <!--    ##### Set Lot Details  ##### -->
+
+    <div align="center" class="form" id="approve-form">
+
+        <h2 class="form-title">Product Details</h2>
+        <input type="text"  name="dataInput" id="lotno" placeholder="Lot number" required />
+        <input type="text"  name="dataInput" id="grade" placeholder="Grade" required />
+        <input type="text"  name="dataInput" id="mrp" placeholder="MRP" required />
+        <input type="text"  name="dataInput" id="testdate" placeholder="Test Date" required />
+        <input type="text"  name="dataInput" id="expdate" placeholder="Expiry Date" required />
+            
+        <button type="button" class="btn-submit" id="setvalue" onclick="setQ()">Submit</button>
+        <span id="status"></span>	
+
+    </div>
+    
+   <link href="./app.css" rel='stylesheet' type='text/css'>
+   <script src="./app.js"></script>
+ 
+ </body>
+ </html>

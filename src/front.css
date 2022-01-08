@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+  }
+  .navbar {
+    width: 100%;
+    max-width:100%;
+    min-height: 10vh;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo {
+    max-width: 100%;
+    width: 200px;
+    height: auto;
+  }
+  .nav-ul {
+    width: 50%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+  }
+  .nav-li {
+    list-style-type: none;
+  }
+  .nav-li a {
+    position: relative;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  .nav-li a::after {
+    content: "";
+    position: absolute;
+    bottom: -1.6vh;
+    left: 0;
+    height: 1px;
+    width: 0%;
+    background-color: white;
+    transition: 0.3s ease;
+  }
+  .nav-li a:hover::after {
+    width: 100%;
+  }
+  .sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+  
+  /*hero-section*/
+  .hero-background {
+    height: 120vh;
+    background-image: url("Images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+
+
+  
+
+  }
+  
+  .hero-section-wrapper {
+    padding-left: 120px;
+  }
+  .hero-text {
+    color: white;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .hero-header {
+    color: white;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .hero-button {
+    position: relative;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .hero-button span {
+    position: relative;
+    z-index: 5;
+  }
+  .hero-button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    transition: 0.1s linear;
+  }
+  .hero-button:hover {
+    color: black;
+  }
+  .hero-button:hover::after {
+    top: 0;
+    height: 100%;
+  }
+  /******responsive*****/
+  @media (max-width: 800px) {
+    .navbar {
+      display: block;
+    }
+    .logo {
+      max-width: 100%;
+      width: 100px;
+      margin: 10px;
+    }
+    .nav-ul {
+      height: 100vh;
+      position: fixed;
+      width: 60%;
+      inset: 0 0 0 40%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 50px 0 0 10px;
+      transform: translateX(100%);
+      transform-origin:100% 0;
+      transition: transform 0.3s linear;
+    }
+    .nav-ul[data-visible="true"] {
+      transform: translateX(0%);
+    }
+    .nav-li {
+      padding: 10px 0;
+    }
+    .nav-li a {
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+    .mobile-toggle {
+      z-index: 1000;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      border: none;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-image: url("Images/background.jpg")
+
+        50% 50% no-repeat;
+      background-size: 100%;
+    }
+    .mobile-toggle[aria-expanded="true"] {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-image: url("Images/background.jpg")
+
+        50% 50% no-repeat;
+      background-size: 100%;
+    }
+    .nav-li a::after {
+      bottom: 0;
+    }
+  
+    /*****hero-section****/
+    .hero-background {
+      height: 100vh;
+    }
+    .hero-section-wrapper {
+      padding-left: 15px;
+    }
+    .hero-text {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .hero-header {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    .hero-button {
+      margin-top: 15px;
+      font-size: 14px;
+      padding: 5px 10px;
+      font-weight: 500;
+    }
+  }
+
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("Images/background.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(4px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }

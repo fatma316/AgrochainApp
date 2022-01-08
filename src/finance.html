@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer</title>
+    <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<header>
+	<nav class="navbar">
+        
+        <link href="./app.css" rel='stylesheet' type='text/css'>
+
+        <script src="./app.js"></script>
+
+
+      <a href="#"></a>
+      <ul id="ul-navigation" class="nav-ul" data-visible="false">
+        <li class="nav-li"><a href="../farmer.html">farmer</a></li>
+        <li class="nav-li"><a href="../tester.html">tester</a></li>
+        <li class="nav-li"><a href="../customer.html">customer</a></li>
+        <li class="nav-li"><a href="../finance.html">supplier</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-controls="ul-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+    </nav>
+</header>
+<body>
+	<br><br><br><br><br><br><br>
+    <div class="btn-group" id="form-selector" align="center">
+        <button type="button" class="btn1 btn-selector" id="supplier-btn">Supplier</button> 
+
+    </div>
+    <div hidden class="btn-group" id="form-selector-undef" align="center">
+        <button type="button" class="btn1 btn-selector" id="supplier-btn-undef">Supplier</button>
+
+	</div>
+
+    <div class="form" id="supplier-form">
+        <h2 class="form-title">Check in form</h2>
+        <input type="text" class="input-std" id="fids" placeholder="Farmer Id">
+        <input type="text" class="input-std" id="lotnos" placeholder="Lot Number">
+        <input type="text" class="input-std" id="check-in-date" placeholder="Check in date">
+        <button type="button" class="btn-submit" id="setvalue-supplier" onclick="set()">Submit Details!</button>
+        <span id="status"></span>
+    </div>
+    
+    <link href="./app.css" rel='stylesheet' type='text/css'>
+    <script src="./app.js"></script>
+  
+  </body>
+  </html>
